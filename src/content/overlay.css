@@ -1,0 +1,12 @@
+#focusBlockedWebiteOverlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100000000;
+}
+
+#focusBlockedWebiteOverlay > h1 {
+  color: white;
+}
