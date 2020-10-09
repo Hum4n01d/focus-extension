@@ -1,4 +1,78 @@
-h1 {
-  font-family: 'SF Text';
-  color: blue;
+body {
+  background-color: #333;
+  color: white;
+  font-family: BlinkMacSystemFont;
+  margin: 0;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+p {
+  margin-bottom: 6px;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+input:checked + .slider {
+  background-color: #FD5200;
+}
+
+.switch input[type="checkbox"] {
+  display: none;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  transition: .4s;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+textarea {
+  border: 0;
+  background-color: #555;
+  color: white;
+  resize: none;
+  padding: 8px;
+  min-height: 100px;
+  line-height: 1.5em;
+}
+
+textarea:focus {
+  outline: none;
 }
